@@ -5,7 +5,7 @@ import { city } from '../data/city';
 import { business } from '../lib/site';
 const c = city.indexPages.contact;
 ---
-<Base noCallout={true} title={c.title} description={c.desc} path="/contact/" crumbs={[{ name: 'Contact', path: '/contact/' }]}>
+<Base noFormBand={true} noCallout={true} title={c.title} description={c.desc} path="/contact/" crumbs={[{ name: 'Contact', path: '/contact/' }]}>
   <Hero headline={c.h1} intro={c.intro} location="Contact" crumbs={[{ href: '/contact/', label: 'Contact' }]} />
   <section class="content-section"><div class="content-inner prose">
     <p>Prefer to talk it through? Call <a href={business.phoneHref} style="text-decoration:underline">{business.phoneDisplay}</a>.</p>

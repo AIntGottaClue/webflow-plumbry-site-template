@@ -8,7 +8,7 @@ const { path, title, description, h1, intro, lead = [], sections = [], faqs = []
 const crumbs = [...(parent ? [{ name: parent.name, path: parent.path }] : []), { name, path }];
 const heroCrumbs = crumbs.map((c) => ({ href: c.path, label: c.name }));
 ---
-<Base noCallout={legal} title={title} description={description} path={path} crumbs={crumbs} service={service} extraSchema={faqs.length ? [faqSchema(faqs)] : []}>
+<Base noFormBand={true} noCallout={legal} title={title} description={description} path={path} crumbs={crumbs} service={service} extraSchema={faqs.length ? [faqSchema(faqs)] : []}>
   <Hero headline={h1} intro={intro} location={location ?? name} crumbs={heroCrumbs} />
   <section class="content-section"><div class="content-inner prose">
     {path.includes("/guides/") && <table class="comparison"><caption>What each step can establish</caption><thead><tr><th>Step</th><th>Purpose</th><th>Limit</th></tr></thead><tbody><tr><td>Inspection</td><td>Locate the visible problem and check pipe condition</td><td>Does not itself fix the problem</td></tr><tr><td>Cleaning</td><td>Clear buildup or an obstruction from the line</td><td>Does not rebuild damaged pipe</td></tr><tr><td>Repair</td><td>Fix or replace the damaged section</td><td>Choice depends on the actual line</td></tr></tbody></table>}

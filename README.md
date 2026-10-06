@@ -71,9 +71,9 @@ These come from the checklist and Javier's standing style rules:
 
 ## Notes
 
-- The hero carries the request form on the homepage (Javier's standing
-  layout). Inner pages get the photo hero; the shared form band sits above the
-  footer on inner pages.
+- The hero carries the request form on every page (Javier's standing
+  layout), so the shared form band is disabled sitewide. Neighborhood pages
+  keep the photo hero with the form in its own column beside it.
 - Previews ship `noindex`; canonical and schema point at the planned domain
   from `site.origin`.
 - Desktop nav dropdowns open on hover (CSS `:hover`/`:focus-within`); mobile

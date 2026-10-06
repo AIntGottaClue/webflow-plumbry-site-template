@@ -5,7 +5,7 @@ import { city, services } from '../../data/city';
 import { u } from '../../lib/utils';
 const c = city.indexPages.services;
 ---
-<Base title={c.title} description={c.desc} path="/services/" crumbs={[{ name: 'Services', path: '/services/' }]}>
+<Base noFormBand={true} title={c.title} description={c.desc} path="/services/" crumbs={[{ name: 'Services', path: '/services/' }]}>
   <Hero headline={c.h1} intro={c.intro} location="Services" crumbs={[{ href: '/services/', label: 'Services' }]} />
   <section class="content-section"><div class="content-inner">
     <div class="card-grid">
