@@ -26,12 +26,7 @@ const aboutImg = pageImage('about-' + home.h1);
           <a class="button-primary" href={business.phoneHref}>Call {business.phoneDisplay}</a>
           <a class="link-underline" href={u('/services/')}>Explore services</a>
         </div>
-        <div class="stat-row">
-          <div class="stat"><strong><span data-count-to={services.length}>0</span><span class="stat-suffix">+</span></strong><span>{city.site.niche} services</span></div>
-          <div class="stat"><strong><span data-count-to={neighborhoods.length}>0</span><span class="stat-suffix">+</span></strong><span>Local area pages</span></div>
-          <div class="stat"><strong>{business.phoneDisplay}</strong><span>Call to confirm availability</span></div>
-        </div>
-      </div>
+            </div>
       <div class="hero-form-wrap reveal" style="--reveal-delay:.15s">
         <div class="fx-circle fx-dot fx-float" data-depth="26" style="width:20px;height:20px;left:-30px;top:10%" aria-hidden="true"></div>
         <RequestForm location="Homepage" />
